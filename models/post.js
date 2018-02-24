@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const model = 'user'
+const model = 'post'
 
 const schema = new mongoose.Schema({
   title: {

@@ -1,8 +1,8 @@
-const UserController = require('../controllers/user')
+const PostController = require('../controllers/post')
 module.exports = (app) => {
-  app.get('/user', UserController.read)
-  app.get('/user/:id', UserController.read)
-  app.post('/user', UserController.create)
-  app.put('/user/:id', UserController.update)
-  app.delete('/user/:id', UserController.delete)
+  app.get('/post', PostController.read)
+  app.get('/post/:id', PostController.read)
+  app.post('/post', PostController.create)
+  app.put('/post/:id', PostController.update)
+  app.delete('/post/:id', PostController.delete)
 }
